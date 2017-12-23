@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="materialize/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+        <link href="materialize/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+        <link rel="stylesheet" type="text/css" href="sweetalert/dist/sweetalert.css">
+        <link rel="stylesheet" type="text/css" href="jquery-ui.css">
+        <style type="text/css">
+            #page{
+                background-color: #1e1e1e;
+            }
+        </style>
+    </head>
+
+    <body class="white-text" id="page" >
+        <div class="container" style="margin:0px auto; width:100%;">
+            <div class="row" id = "roomPage" >
+                    <div class="row">
+                    
+                      <div class="input-field col s6">
+                            <input id="roomNum" type="text"  data-length="10">
+                            <span class = "error" id="unE" >Number of digits btw (5-10)</span>
+                            <label for="roomNum">Enter Room Number</label>
+                      </div>
+                    </div>
+                    <!--Join Button-->
+                    <div id="room_id input buttons">
+                        <button id="join" class="btn blue darken-3 waves-effect waves-light" onclick="hideDiv(true)">Create
+                        </button>
+
+                        <!-- <button class="btn blue darken-3 waves-effect waves-light" onclick="generateRandom()">Random </button>-->
+                        
+                    </div>
+
+                    <div id="roomsDiv">
+                        <table id="roomList">
+                            <tr><th>Room number</th></tr>
+
+                        </table>
+                    </div>
+
+            </div>
+        
+            <div class="row" id="callPage" style="display:none;">
+                <div id="me" style="display:inline-block; width:49%; margin:5px;" >
+                    <video id="localVideo" autoplay muted style="width:100%; border-radius:20px;"></video>
+                </div>
+
+                <div id="you" style="display:inline-block; width:49%; margin:5px;">
+                    <video id="otherVideo" autoplay src="\\null" style="width:100%; border-radius:20px;"></video> 
+                </div>
+                <br>
+                <div id="others" style="display:block;text-align:center;">
+                </div>
+
+<!--                <button class="btn blue darken-3" id="btn1" onclick="start(true)">Start</button> -->
+
+            </div>
+            
+        </div>
+
+        <script type="text/javascript" src="materialize/js/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="materialize/js/materialize.js"></script>    
+        <script src="adapter.js"></script>
+        <script src="webrtc.js"></script>
+        <script src="jquery-ui.js"></script>
+        <script src="sweetalert/dist/sweetalert.min.js"></script>
+            
+    </body>
+</html>
