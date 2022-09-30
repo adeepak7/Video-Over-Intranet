@@ -7,7 +7,7 @@
 ### Find out the live demonstration of the project at my Youtube Channel 
   - [Video Over Intranet (VDOIT)](https://youtu.be/nAwfaoq15N8)
 
-### Citation (Bibtex)
+### Citation (Bibtex format)
 
 ```
 @article{10.3897/rio.6.e58504,
